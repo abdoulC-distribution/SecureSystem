@@ -10,9 +10,9 @@ export async function GET() {
 }
 
 //create new user
-export async function POST(request: Request) {
-    await connectDB();
-    const body = await request.json();
-    const user = await User.create(body);
-    return NextResponse.json(user, {status: 201});
-}
+// export async function POST(request: Request) {
+//     await connectDB();
+//     const body = await request.json();
+//     const user = await User.create(body);
+//     return NextResponse.json(user, {status: 201});
+// }

@@ -4,6 +4,7 @@ const ROLES = ["USER", "ADMIN"];
 
 const userSchema = new mongoose.Schema(
   {
+    name: String,
     email: {
       type: String,
       required: true,
@@ -12,7 +13,7 @@ const userSchema = new mongoose.Schema(
       trim: true,
     },
 
-    passwordHash: {
+    password: {
       type: String,
       required: true,
     },
