@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const dbHost = '127.0.0.1';
 const dbPort = 27017;
-const dbName = 'User'; //to replace with your database name
+const dbName = 'User'; 
 const dbURI = `mongodb://${dbHost}:${dbPort}/${dbName}`;
 
 let dbConnection = null;

@@ -30,5 +30,5 @@ export async function POST(request: Request) {
         process.env.JWT_SECRET!, 
         {expiresIn: "1h"}
     );
-    return NextResponse.json({token}, {status: 200});
+    return NextResponse.json({message: "Login successful", token}, {status: 200});
 }
