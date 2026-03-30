@@ -4,6 +4,7 @@ import {requireAuth} from "@/lib/middleware/auth";
 
 export async function GET(req: Request) {
     try {
+        console.log("try it"); 
         await connectDB();
         const user = await requireAuth(req);
         return NextResponse.json({

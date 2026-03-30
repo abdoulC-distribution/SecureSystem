@@ -12,7 +12,7 @@ const getUser=async()=>{
 
 const token=localStorage.getItem("token");
 
-const res=await fetch("/api/auth/me",{
+const res=await fetch("/api/auth/getUserCo",{
 
 headers:{
 Authorization:`Bearer ${token}`

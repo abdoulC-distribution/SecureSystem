@@ -1,6 +1,6 @@
 import {verifyToken} from "../auth.js";
 import {connectDB} from "../db.js";
-import User from "../models/User.js";
+import User from "../../models/users.js";
 
 export async function requireAuth(req) {
     await connectDB();
