@@ -18,4 +18,4 @@ JWT_SECRET=secret_key
     mongod --dbpath dbData with the good path to reach dbData
 #
 at the same time in two differents terminal
-- Go to localhost:3000 to see the app and use it 
+- Go to **localhost:3000** to see the app and use it 
